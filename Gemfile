@@ -42,6 +42,7 @@ gem 'carrierwave'
 
 gem 'simple_form', '~>4.0.1'
 
+gem 'pg'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
