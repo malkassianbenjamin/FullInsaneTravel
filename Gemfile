@@ -42,6 +42,8 @@ gem 'carrierwave'
 
 gem 'simple_form', '~>4.0.1'
 
+gem 'pg'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -60,6 +62,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+  gem 'pg'         #gem to use in production environment
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
